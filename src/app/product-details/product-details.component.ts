@@ -35,6 +35,8 @@ export class ProductDetailsComponent implements OnInit {
       quantity: 1,
       isSaved: false,
     };
+    alert("Cart Added sucessfully")
     this.cartService.addToCart(cartItem);
+    
   }
 }

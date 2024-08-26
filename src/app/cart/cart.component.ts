@@ -28,6 +28,7 @@ export class CartComponent implements OnInit {
   removeFromCart(productId: number): void {
     this.cart = this.cart.filter(item => item.id !== productId);
     localStorage.setItem('cart', JSON.stringify(this.cart));
+    alert("Cart Removed sucessfully")
     this.calculateTotal();
   }
   
