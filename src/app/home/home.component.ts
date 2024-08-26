@@ -22,7 +22,7 @@ export class HomeComponent implements OnInit {
     'https://rukminim2.flixcart.com/fk-p-flap/1600/270/image/44fe68e438b997c9.jpeg?q=90',
     'https://rukminim2.flixcart.com/fk-p-flap/1600/270/image/b05db66d26666a4d.jpg?q=90',
     'https://rukminim2.flixcart.com/fk-p-flap/1600/270/image/20a160ef30776af8.jpeg?q=90',
-    'https://rukminim1.flixcart.com/fk-p-flap/1600/270/image/17821708e64ed52d.jpg?q=20',
+    'https://rukminim1.flixcart.com/fk-p-flap/1600/270/image/cc633426b89ad841.png?q=20',
     'https://rukminim1.flixcart.com/fk-p-flap/1600/270/image/4732d7a1b8921f82.jpg?q=20',
     'https://rukminim1.flixcart.com/fk-p-flap/1600/270/image/81a6ce54a0a3230a.jpg?q=20'];
   ads: string[] = [
@@ -124,7 +124,21 @@ export class HomeComponent implements OnInit {
     console.log(panelIndex);
   }
   
+  onSearchChange(event: Event): void {
+    const inputElement = event.target as HTMLInputElement;
+    this.searchText = inputElement.value;
+    this.filterProducts1();
+  }
 
+  filterProducts1(): void {
+    if (this.searchText) {
+      this.filteredProducts = this.products.filter(product =>
+        product.category.toLowerCase().includes(this.searchText.toLowerCase())
+      );
+    } else {
+      this.filteredProducts = this.products;
+    }
+  }
   filterProducts(category: string): void {
     if (category === 'all') {
       this.filteredProducts = [...this.products];
@@ -132,4 +146,5 @@ export class HomeComponent implements OnInit {
       this.filteredProducts = this.products.filter(product => product.category === category);
     }
   }
+  
 }

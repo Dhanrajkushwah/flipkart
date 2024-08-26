@@ -55,10 +55,31 @@
   background-color: #ff1744;
 }
 
+
 .totals {
-  text-align: right;
-  margin-top: 20px;
-  font-size: 18px;
-  font-weight: bold;
-  color: #212121;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+  padding: 10px; 
+  border: 1px solid #ccc; 
+  background-color: #f9f9f9; 
 }
+
+.place-btn {
+  padding: 10px 20px; 
+  background-color: #007bff; 
+  color: white; 
+  border: none; 
+  border-radius: 5px; 
+  cursor: pointer; 
+}
+
+.place-btn:hover {
+  background-color: #0056b3; 
+}
+
+p {
+  margin: 0; /* Remove default margin from paragraph */
+  font-size: 1.2em; /* Adjust font size if needed */
+}
+

@@ -127,6 +127,62 @@
       padding-bottom: 25px;
       cursor: pointer;
     }
+    @media (max-width: 768px) {
+      .sign-in-section {
+        flex-direction: column;
+      }
+
+      .sign-in-left-container {
+        width: 100%;
+        padding: 20px;
+        align-items: center;
+        text-align: center;
+      }
+
+      .sign-in-right-container {
+        padding: 30px;
+      }
+
+      .title {
+        font-size: 2em;
+      }
+
+      p {
+        font-size: 1em;
+      }
+
+      .login-image {
+        margin-top: 30px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .sign-in-section {
+        margin: 10px;
+        width: 100%;
+      }
+
+      .sign-in-right-container {
+        padding: 20px;
+      }
+
+      .title {
+        font-size: 1.8em;
+      }
+
+      p {
+        font-size: 0.9em;
+      }
+
+      .mobile-input-box input {
+        font-size: 0.9em;
+      }
+
+      .request-otp, .existing-user-button {
+        font-size: 0.8em;
+        height: 44px;
+      }
+    }
   </style>
 </head>
 <body>
