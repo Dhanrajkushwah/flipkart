@@ -1,0 +1,62 @@
+.product-details {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  background-color: #fff;
+  text-align: left;
+  font-family: 'Roboto', sans-serif;
+}
+
+.product-image {
+  width: 100%;
+  max-width: 300px;
+  height: 300px; /* Fixed height */
+  object-fit: contain; /* Keeps the image aspect ratio */
+  border-radius: 8px;
+  margin-bottom: 20px;
+  background-color: #f1f1f1; /* Light gray background to mimic Flipkart */
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #212121;
+  font-weight: 500;
+}
+
+.product-price {
+  font-size: 24px;
+  color: #388e3c;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.product-description {
+  font-size: 16px;
+  color: #757575;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.add-to-cart-btn {
+  display: inline-block;
+  width: 100%;
+  padding: 15px;
+  background-color: #fb641b;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-to-cart-btn:hover {
+  background-color: #f86c30;
+}

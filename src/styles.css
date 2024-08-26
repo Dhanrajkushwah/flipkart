@@ -1,0 +1,51 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15.5px;
+  }
+  
+  .product-card {
+    width: 200px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    text-align: center;
+    max-height: 300px;
+  }
+  
+  .product-card img {
+    width: 100%;
+    height:50%;
+  }
+  
+  .product-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .cart {
+    padding: 16px;
+  }
+  
+  .cart-item {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding: 8px 0;
+  }
+  
+  .cart-item img {
+    width: 50px;
+    height: auto;
+    margin-right: 16px;
+  }
+  
+  .totals {
+    margin-top: 16px;
+  }
+  

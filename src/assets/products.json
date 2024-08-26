@@ -1,0 +1,93 @@
+[
+  {
+    "id": 1,
+    "name": "vivo V40 Pro 5G",
+    "price": 70000,
+    "imageUrl": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/h/s/b/-original-imah3hvbysfwxydc.jpeg?q=70",
+    "hasDiscount": true,
+    "discountPercent": 4,
+    "seller": "Asian Shop",
+    "brand": "vivo",
+    "deliveryTime": 4,
+    "deliveryCost": 40,
+    "description": "Description for Product 1"
+  },
+  {
+    "id": 2,
+    "name": "Shoe",
+    "price": 500,
+    "imageUrl": "https://images.unsplash.com/photo-1578116922645-3976907a7671?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=751&q=80",
+    "hasDiscount": true,
+    "discountPercent": 25,
+    "seller": "Asian Shop",
+    "deliveryTime": 4,
+    "brand": "Campus",
+    "deliveryCost": 40,
+    "description": "Description for Product 2"
+  },
+  {
+    "id": 3,
+    "name": "Full Sleeve Shirt",
+    "price": 650,
+    "imageUrl": "https://contents.mediadecathlon.com/p1640930/5c9aba738268ae5e728c38a672713268/p1640930.jpg",
+    "hasDiscount": false,
+    "discountPercent": 0,
+    "seller": "Asian Shop",
+    "deliveryTime": 4,
+    "brand": "D-cot",
+    "deliveryCost": 40,
+    "description": "Description for Product 3"
+  },
+  {
+    "id": 4,
+    "name": "Jeans",
+    "price": 1050,
+    "imageUrl": "https://rukminim2.flixcart.com/image/612/612/xif0q/jean/7/w/6/28-dl-men-baggy-07-denim-look-original-imah3jctm6udjxg4.jpeg?q=70",
+    "hasDiscount": true,
+    "discountPercent": 10,
+    "seller": "Asian Shop",
+    "brand": "Lives",
+    "deliveryTime": 4,
+    "deliveryCost": 40,
+    "description": "Description for Product 4"
+  },
+  {
+    "id": 5,
+    "name": "Watch",
+    "price": 2000,
+    "imageUrl": "https://rukminim2.flixcart.com/image/612/612/xif0q/smartwatch/8/u/s/-original-imahf5ngfckrg5ug.jpeg?q=70",
+    "hasDiscount": true,
+    "discountPercent": 10,
+    "seller": "Asian Shop",
+    "brand": "Fastract",
+    "deliveryTime": 4,
+    "deliveryCost": 40,
+    "description": "Description for Product 5"
+  },
+  {
+    "id": 6,
+    "name": "DSLR & Mirrorless",
+    "price": 15000,
+    "imageUrl": "https://rukminim2.flixcart.com/image/312/312/kk01pjk0/dslr-camera/f/v/o/eos-1500d-canon-original-imafzfugydh2mjgf.jpeg?q=70",
+    "hasDiscount": true,
+    "discountPercent": 10,
+    "seller": "Asian Shop",
+    "brand": "Nikon",
+    "deliveryTime": 4,
+    "deliveryCost": 40,
+    "description": "Description for Product 6"
+  },
+  {
+    "id": 7,
+    "name": "Men’s Sports Shoes",
+    "price": 1500,
+    "imageUrl": "https://rukminim2.flixcart.com/image/612/612/xif0q/shoe/0/c/3/6-rng-854-grey-40-bruton-grey-original-imah3xh6a6ecvmng.jpeg?q=70",
+    "hasDiscount": true,
+    "discountPercent": 10,
+    "seller": "Asian Shop",
+    "brand": "Addidas",
+    "deliveryTime": 4,
+    "deliveryCost": 40,
+    "description": "Description for Product 6"
+  }
+]
