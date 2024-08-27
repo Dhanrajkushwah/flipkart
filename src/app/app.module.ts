@@ -54,7 +54,8 @@ import {MatMenuModule} from '@angular/material/menu';
     MatBadgeModule,
     MatIconModule,
     MatBadgeModule,
-    MatMenuModule
+    MatMenuModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent],

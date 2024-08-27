@@ -13,7 +13,17 @@ export class HomeComponent implements OnInit {
   currentSlide: number = 0;
   slidesToShow: number = 4;
 
-
+  images1 = [
+    { src: 'https://rukminim2.flixcart.com/image/612/612/xif0q/sweater/s/n/c/-original-imah3q6ukffhvvgm.jpeg?q=70', alt: 'Discount 1' },
+    { src: 'https://rukminim2.flixcart.com/image/612/612/xif0q/snack-savourie/d/r/v/-original-imaghfn8j2vrwfcy.jpeg?q=70', alt: 'Discount 2' },
+    { src: 'https://rukminim2.flixcart.com/image/612/612/xif0q/jacket/f/d/p/s-no-sc24-csmawjk016-campus-sutra-original-imahy7hddc3z9tww.jpeg?q=70', alt: 'Discount 3' },
+    { src: 'https://rukminim2.flixcart.com/image/612/612/xif0q/edible-seed/n/a/y/1-raw-chia-seeds-for-weight-loss-management-with-omega-3-and-original-imagmnxymrd4fpbq.jpeg?q=70', alt: 'Discount 4' },
+    { src: 'https://rukminim2.flixcart.com/image/612/612/xif0q/smartwatch/1/h/o/46-482-m1-stew-android-ios-cellecor-yes-original-imah3j6juthzgsz9.jpeg?q=70', alt: 'Discount 5' },
+    { src: 'https://rukminim2.flixcart.com/image/612/612/l071d3k0/tv-entertainment-unit/m/0/o/-original-imagcfhne9zbhema.jpeg?q=70', alt: 'Discount 6' },
+    { src: 'https://rukminim2.flixcart.com/image/612/612/xif0q/slipper-flip-flop/f/m/j/-original-imah2c46afnnp8ye.jpeg?q=70', alt: 'Discount 7' },
+  ];
+  
+ 
   @Input() searchText: string = ''; // Receive the search text from parent component
  
   productList: BehaviorSubject<Product[]> = new BehaviorSubject<Product[]>([]);
@@ -146,5 +156,15 @@ export class HomeComponent implements OnInit {
       this.filteredProducts = this.products.filter(product => product.category === category);
     }
   }
-  
+  getTransform2(): string {
+    return `translateX(-${this.currentSlide * 100}%)`;
+  }
+
+  prevSlide2(): void {
+    this.currentSlide = (this.currentSlide > 0) ? this.currentSlide - 1 : this.images.length - 1;
+  }
+
+  nextSlide2(): void {
+    this.currentSlide = (this.currentSlide < this.images.length - 1) ? this.currentSlide + 1 : 0;
+  }
 }

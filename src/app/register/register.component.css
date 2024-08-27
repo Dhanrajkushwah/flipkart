@@ -1,49 +1,79 @@
 .gradient-custom {
-    min-height: 100vh;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-  
-  /* For the container that holds the form */
-  .container-fluid {
-    padding: 0;
-    margin: 0;
-  }
-  
-  /* Adjust the card and form responsiveness */
-  .card-registration {
-    border-radius: 15px;
-  }
-  
-  .card-registration .select-input.form-control[readonly]:not([disabled]) {
-    font-size: 1rem;
-    line-height: 2.15;
-    padding-left: 0.75em;
-    padding-right: 0.75em;
-  }
-  
-  .card-registration .select-arrow {
-    top: 13px;
-  }
-  
-  @media (max-width: 768px) {
-    .card-registration {
-      margin-top: 20px;
-    }
-  
-    .card-body {
-      padding: 2rem;
-    }
-  
-    .gradient-custom {
-      min-height: auto;
-    }
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.container-fluid {
+  padding: 0;
+  margin: 0;
+}
+
+.card-registration {
+  border-radius: 15px;
+}
+
+.card-registration .select-input.form-control[readonly]:not([disabled]) {
+  font-size: 1rem;
+  line-height: 2.15;
+  padding-left: 0.75em;
+  padding-right: 0.75em;
+}
+
+.card-registration .select-arrow {
+  top: 13px;
+}
+
+@media (max-width: 992px) {
+  .card-body {
+    padding: 3rem;
   }
 
+  .form-control-lg {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .card-body {
+    padding: 2rem;
+  }
+
+  .form-control-lg {
+    font-size: 0.85rem;
+  }
+
+  .gradient-custom {
+    min-height: auto;
+  }
+
+  .row {
+    margin: 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .card-body {
+    padding: 1.5rem;
+  }
+
+  .form-control-lg {
+    font-size: 0.8rem;
+  }
+}
+
 .form-control-lg {
-    min-height: calc(1.5em + 1rem + 2px);
-    /* padding: .5rem 1rem; */
-    font-size: 0.90rem;
-    border-radius: .3rem;
+  min-height: calc(1.5em + 1rem + 2px);
+  font-size: 0.90rem;
+  border-radius: .3rem;
+}
+
+.position-relative i {
+  right: 15px;
+  top: 35px;
+}
+
+.is-invalid {
+  border: 1px solid #ff0000 !important;
 }

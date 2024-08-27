@@ -224,6 +224,24 @@
     </div>
   </div>
 </div>
+<div class="container-fluid mt-3">
+  <h2>Monsoon Essentials</h2>
+  <div class="carousel-container">
+    <div class="carousel-wrapper" [style.transform]="getTransform()">
+      <div *ngFor="let image of images1" class="carousel-card">
+        <img [src]="image.src" [alt]="image.alt" />
+        <div class="product-info">
+          <p>Price: Rs 500</p>
+          <a [routerLink]="['/product']">Up to 50%</a>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control prev" (click)="prevSlide2()">&#10094;</button>
+    <button class="carousel-control next" (click)="nextSlide2()">&#10095;</button>
+  </div>
+</div>
+
+
 <div class="container-fluid mt-5 mb-0 pb-0">
   <div>
     <h1>Flipkart: The One-stop Shopping Destination</h1>E-commerce is revolutionizing the way we all shop in
